@@ -5,6 +5,7 @@ import MovieList from './components/MovieList';
 
 const App = () => {
 //usestate object holds the movies results we comeback from a search
+
   const [movies, setMovies] = useState([{ 
     "adult": false,
     "backdrop_path": "/4qCqAdHcNKeAHcK8tJ8wNJZa9cx.jpg",
@@ -66,9 +67,10 @@ const App = () => {
     "vote_count": 18921
 }]) 
   return (
-  <div className="ccontaier-fluid">
-    
+  <div className="container-fluid movie-app">
+    <div className="row">
     <MovieList movies = {movies} />
+    </div>
   </div>
 );
 };
